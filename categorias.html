@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html>
+    <title>Categorias Neon Store</title>
+    <video src="imgEstilos/fondo 2.mp4" autoplay loop></video>
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    </head>
+
+    <body>
+        <div>
+            <header class="upperbarPrin">
+                <h1>Categorias</h1>
+                <nav>
+                  <ul>
+                    <li><a href="paginaPrincipal.html">Inicio</a></li>
+                    <li><a href="aboutus.html">Acerca de</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <div class="buscar">
+                        <input id="inputPrin" type="search" placeholder="Buscar...">
+                        <div class="btn">
+                            <button id="botonLupa"><img id="lupa" src="imgEstilos/lupaLogo.png"></button>
+                            
+                        </div>
+                    </div>
+                  </ul>
+                </nav>
+              </header>
+        </div>
+        <div class="categorias">
+            <table>
+                <ul>
+                    <li><a href="#anclaFree">Free to play</a></li>
+                    <li><a href="#anclaAccion">Acci&oacute;n</a></li>
+                    <li><a href="#anclaAventura">Aventura</a></li>
+                </ul>
+            </table>
+        </div>
+        <div>
+            <div class="juegos">
+                <div class="juegosAccion">
+                    <a name="anclaAccion"><h2>Acci&oacute;n</h2></a>
+                <table>
+                    <tr>
+                        <td>    
+                            <div class="tablaJuegos">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h3>Sekiro</h3>
+                                            <img src="img/sekiroportada.jpg">
+                                            <div class="botonAbrir">
+                                                <input type="button"  onclick="mostrarSekiro();" value="Ver Juego">
+                                            </div> 
+                                        </td>
+                                        <td>
+                                            <h3>COD Modern Warfare 2</h3>
+                                            <img src="img/callofdutymw2 portada.jpg">
+                                            <div class="botonAbrir">
+                                                <input type="button" onclick="mostrarCod();" value="Ver Juego">                                            
+                                            </div> 
+                                        </td>
+                                        <td>
+                                            <h3>Marvel's Spiderman</h3>
+                                            <img src="img/spidermanPortada.jpg">
+                                            <div class="botonAbrir">
+                                                <input type="button"  onclick="mostrarSpiderman();" value="Ver Juego">
+                                            </div> 
+                                        </td>
+                                        <td>
+                                            <h3>Spiderman Miles Morales</h3>
+                                            <img src="img/milesmoralesportada.jpg">
+                                            <div class="botonAbrir">
+                                                <input type="button"  onclick="mostrarMilesmorales();" value="Ver Juego">
+                                            </div> 
+                                        </td>
+                                    </tr>
+                                </table> 
+                            </div>                             
+                            <div id="sekiro">  
+                                <div class="contenedorCerrar">
+                                    <div class="botonCerrar">
+                                        <button class="ocultarjuego" onclick="ocultarSekiro();"><img id="cerrar" src="imgEstilos/iconoX.png"></button>
+                                    </div>
+                                </div>         
+                                <div class="contenidoJuego">
+                                    <div class="logo">
+                                        <img id="imgLogo" src="img/sekirologo.png">
+                                    </div>
+                                    <div class="contenedorImgFondo">
+                                        <img id="imgFondo" src="img/sekirofondo.jpg">
+                                        <div class="borde"></div>
+                                    </div>
+                                    <div class="descripcion">
+                                            <h3>Sekiro™</h3>
+                                            <p>
+                                                En Sekiro: Shadows Die Twice encarnas al 'lobo manco', un guerrero desfigurado y caído en desgracia que ha sido rescatado al borde de la muerte. Tras jurar proteger a un joven señor descendiente de un antiguo linaje, te conviertes en el objetivo de despiadados enemigos, entre ellos el peligroso clan Ashina. Cuando el joven señor es capturado, nada te detendrá en tu peligrosa aventura por restituir tu honor, ni siquiera la muerte.
+                                            </p>
+                            
+                                            <p>
+                                                Explora el Japón de la era Sengoku de finales del siglo XVI, un brutal periodo de constante conflicto, mientras te enfrentas a inconmensurables enemigos en un mundo oscuro y tortuoso. Despliega un arsenal de instrumentos protésicos letales y poderosas habilidades ninja, al mismo tiempo que combinas el sigilo, la verticalidad y transversalidad, y los viscerales combates cara a cara en una sangrienta confrontación.
+                                            </p>
+                                            
+                                            <p>
+                                                Véngate. Restituye tu honor. Mata con ingenio.
+                                            </p>
+                                    </div>
+                                    <div class="multimediaJuego">
+                                        <div class="contenedorTrailers">
+                                            <div class="trailers">
+                                                <iframe width="530" height="300" src="https://www.youtube.com/embed/B6jYdOYUhnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="530" height="300" src="https://www.youtube.com/embed/6-XMnbx5Us8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="contenedorImagenesJuego">
+                                            <div id="imagenesJuegos">
+                                                <ul>
+                                                    <li><img src="img/sekirofondo.jpg"></li>
+                                                    <li><img src="img/sekiro1.jpeg"></li>
+                                                    <li><img src="img/sekiro2.jpg"></li>      
+                                                    <li><img src="img/SEKIRO4.jpg"></li>                                         
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoAdicional">
+                                    <h3>M&aacutes Informaci&oacuten: </h3>
+                                    <ul>
+                                        <li>Un jugador</li>
+                                        <li>Compatibilidad con Mando</li>
+                                        <li>13 idiomas disponibles</li>
+                                        <li>F&iacutesico y digital</li>
+                                    </ul>
+                                </div>
+                                <div class="comprar">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>$1.200ARS</p> 
+                                            </td>
+                                            <td>
+                                                <div class="botonComprar">
+                                                    <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="cod">  
+                                <div class="contenedorCerrar">
+                                    <div class="botonCerrar">
+                                        <button class="ocultarjuego" onclick="ocultarCod();"><img id="cerrar2" src="imgEstilos/iconoX.png"></button>
+                                    </div>
+                                </div>         
+                                <div class="contenidoJuego">
+                                    <div class="logo">
+                                        <img id="imgLogo2" src="img/codLogo.webp">
+                                    </div>
+                                    <div class="contenedorImgFondo">
+                                        <img id="imgFondo2" src="img/codFondo.jpg">
+                                        <div class="borde"></div>
+                                    </div>
+                                    <div class="descripcion">
+                                        <div>
+                                            <h3>Call of Duty MW 2</h3>
+                                                <p>
+                                                    Call of Duty®: Modern Warfare® II sumerge a los jugadores en un conflicto mundial sin precedentes que presenta el regreso de los icónicos Operadores de la Fuerza operativa 141. Desde operaciones tácticas de infiltración a pequeña escala hasta misiones ultra secretas, los jugadores emprenderán con sus amigos una aventura inmersiva.                                                    </p>
+                        
+                                                <p>
+                                                    Infinity Ward trae un juego de última generación para los fanáticos con un manejo de armas completamente nuevo, una nueva armería y otras innovaciones gráficas y de juego que disparan la franquicia a nuevas alturas.                                                    </p>
+                                        
+                                                <p>
+                                                    También tendrás acceso a Call of Duty®: Warzone™ 2.0, la nueva experiencia Battle Royale.                                                    </p>
+                                        </div>
+                                    <div class="multimediaJuego">
+                                        <div class="contenedorTrailers">
+                                            <div class="trailers">
+                                                <iframe width="530" height="300" src="https://www.youtube.com/embed/VWqqQUhzSDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="530" height="300" src="https://www.youtube.com/embed/4igb7__IrfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="contenedorImagenesJuego">
+                                            <div id="imagenesJuegos2">
+                                                <ul>
+                                                    <li><img src="img/cod1.webp"></li>
+                                                    <li><img src="img/cod2.jpg"></li>
+                                                    <li><img src="img/cod3.webp"></li>      
+                                                    <li><img src="img/cod4.jpg"></li>                                         
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <ul>
+                        
+                                    </ul>
+                                </div>
+                                <div class="infoAdicional">
+                                    <h3>M&aacutes Informaci&oacuten: </h3>
+                                    <ul>
+                                        <li>Un jugador/Multijugador</li>
+                                        <li>JcJ en linea</li>
+                                        <li>Compatibilidad con mando</li>
+                                        <li>F&iacutesico y digital</li>
+                                    </ul>
+                                </div>
+                                <div class="comprar">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>$6.990ARS</p> 
+                                            </td>
+                                            <td>
+                                                <div class="botonComprar">
+                                                    <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="spiderman">  
+                                <div class="contenedorCerrar">
+                                    <div class="botonCerrar">
+                                        <button class="ocultarjuego" onclick="ocultarSpiderman();"><img id="cerrar3" src="imgEstilos/iconoX.png"></button>
+                                    </div>
+                                </div>         
+                                <div class="contenidoJuego">
+                                    <div class="logo">
+                                        <img id="imgLogo3" src="img/spidermanLogo.png">
+                                    </div>
+                                    <div class="contenedorImgFondo">
+                                        <img id="imgFondo3" src="img/spidermanFondo.webp">
+                                        <div class="borde"></div>
+                                    </div>
+                                    <div class="descripcion">
+                                        <div>
+                                            <h3>Marvel's Spiderman</h3>
+                                                <p>
+                                                    Demuestra tu grandeza
+                                                    Cuando varios de los villanos emblemáticos de Marvel amenazan Nueva York, las vidas de Peter Parker y Spider-Man chocarán entre sí. Para salvar a la ciudad y a sus seres amados, deberá estar a la altura de las circunstancias y demostrar su grandeza.
+                                                </p>
+                        
+                                                <p>
+                                                    Siéntete como Spider-Man
+                                                    Luego de ocho años de portar la máscara, Peter Parker ya es todo un experto en la lucha contra el crimen. Siente todo el poder de un Spider-Man con experiencia mediante combates improvisados, acrobacias dinámicas, viajes por la ciudad de gran fluidez e interacciones con el entorno.
+                                                </p>
+                                        
+                                                <p>
+                                                    Nueva York es tu patio de juegos
+                                                    Marvel’s Spider-Man le da vida a la ciudad de Nueva York. Balancéate por vecindarios vibrantes y recorre sitios emblemáticos de Manhattan y del universo de Marvel. Usa el entorno a tu favor y derrota a los villanos en enfrentamientos épicos y cargados de acción.
+                                                </p>
+                                        </div>
+                                    <div class="multimediaJuego">
+                                        <div class="contenedorTrailers">
+                                            <div class="trailers">
+                                                <iframe width="530" height="300" src="https://www.youtube.com/embed/q4GdJVvdxss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="530" height="300" src="https://www.youtube.com/embed/1E051WtpyWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="contenedorImagenesJuego">
+                                            <div id="imagenesJuegos3">
+                                                <ul>
+                                                    <li><img src="img/spiderman1.webp"></li>
+                                                    <li><img src="img/spiderman2.jpg"></li>
+                                                    <li><img src="img/spiderman3.webp"></li>      
+                                                    <li><img src="img/spiderman4.jpg"></li>                                         
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <ul>
+                        
+                                    </ul>
+                                </div>
+                                <div class="infoAdicional">
+                                    <h3>M&aacutes Informaci&oacuten: </h3>
+                                    <ul>
+                                        <li>Un jugador</li>
+                                        <li>Remote play TV</li>
+                                        <li>Compatibilidad con mando</li>
+                                        <li>F&iacutesico y digital</li>
+                                    </ul>
+                                </div>
+                                <div class="comprar">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>$9.999ARS</p> 
+                                            </td>
+                                            <td>
+                                                <div class="botonComprar">
+                                                    <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="milesmorales">  
+                                <div class="contenedorCerrar">
+                                    <div class="botonCerrar">
+                                        <button class="ocultarjuego" onclick="ocultarMilesmorales();"><img id="cerrar4" src="imgEstilos/iconoX.png"></button>
+                                    </div>
+                                </div>         
+                                <div class="contenidoJuego">
+                                    <div class="logo">
+                                        <img id="imgLogo4" src="img/milesmoraleslogo.png">
+                                    </div>
+                                    <div class="contenedorImgFondo">
+                                        <img id="imgFondo4" src="img/milesmoralesfondo.webp">
+                                        <div class="borde"></div>
+                                    </div>
+                                    <div class="descripcion">
+                                        <div>
+                                            <h3>Spiderman Miles Morales</h3>
+                                                <p>
+                                                    Miles Morales descubre poderes increíbles que lo diferencian de su mentor, Peter Parker. Domina sus únicos ataques de ráfaga de veneno bioeléctricos y su poder de camuflaje, junto a sus espectaculares habilidades acrobáticas con la telaraña, sus accesorios y habilidades.
+                                                </p>
+                        
+                                                <p>
+                                                    Una guerra por el control de la Nueva York de Marvel se desata entre una compañía de energía sospechosa y un ejército de criminales armados con la mejor tecnología. Con su hogar en medio de la batalla, Miles debe aprender lo que significa ser un héroe y decidir qué sacrificar por el bien común.
+                                                </p>
+                                        
+                                                <p>
+                                                    Desplázate por las nevadas calles de este nuevo y animado vecindario mientras Miles busca su sentido de pertenencia. Cuando la línea entre su vida personal y la lucha contra el crimen se vuelve demasiado fina, descubrirá en quién puede confiar y qué se siente estar realmente en casa.
+
+                                                </p>
+                                        </div>
+                                    <div class="multimediaJuego">
+                                        <div class="contenedorTrailers">
+                                            <div class="trailers">
+                                                <iframe width="530" height="300" src="https://www.youtube.com/embed/NTunTURbyUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="530" height="300" src="https://www.youtube.com/embed/CMRBuagwRb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="contenedorImagenesJuego">
+                                            <div id="imagenesJuegos4">
+                                                <ul>
+                                                    <li><img src="img/milesmorales1.jpeg"></li>
+                                                    <li><img src="img/milesmorales2.jpg"></li>
+                                                    <li><img src="img/milesmorales3.webp"></li>      
+                                                    <li><img src="img/milesmorales4.jpg"></li>                                         
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <ul>
+                        
+                                    </ul>
+                                </div>
+                                <div class="infoAdicional">
+                                    <h3>M&aacutes Informaci&oacuten: </h3>
+                                    <ul>
+                                        <li>Un jugador</li>
+                                        <li>Remote play TV</li>
+                                        <li>Compatibilidad con mando</li>
+                                        <li>F&iacutesico y digital</li>
+                                    </ul>
+                                </div>
+                                <div class="comprar">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>$8.499ARS</p> 
+                                            </td>
+                                            <td>
+                                                <div class="botonComprar">
+                                                    <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                <div class="juegos">
+                    <div class="juegosT">
+                        <a name="anclaFree"><h2>Free to Play</h2></a>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="tablaJuegos">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <h3>Dota 2</h3>
+                                                    <img src="img/dota portada.jpg">
+                                                    <div class="botonAbrir">
+                                                        <input type="button" onclick="mostrarDota();" value="Ver Juego">
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    <h3>Apex</h3>
+                                                    <img src="img/apexportada.jpg">
+                                                    <div class="botonAbrir">
+                                                        <input type="button" onclick="mostrarApex();" value="Ver Juego">
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    <h3>Paladins</h3>
+                                                    <img src="img/paladins portada.jpg">
+                                                    <div class="botonAbrir">
+                                                        <input type="button" onclick="mostrarPaladins();" value="Ver Juego">
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    <h3>Overwatch 2</h3>
+                                                    <img src="img/overwatchportada.jpg">
+                                                    <div class="botonAbrir">
+                                                        <input type="button" onclick="mostrarOverwatch2();" value="Ver Juego">
+                                                    </div> 
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div id="dota">  
+                                            <div class="contenedorCerrar">
+                                                <div class="botonCerrar">
+                                                    <button class="ocultarjuego" onclick="ocultarDota();"><img id="cerrar5" src="imgEstilos/iconoX.png"></button>
+                                                </div>
+                                            </div>         
+                                            <div class="contenidoJuego">
+                                                <div class="logo">
+                                                    <img id="imgLogo5" src="img/dotalogo.png">
+                                                </div>
+                                                <div class="contenedorImgFondo">
+                                                    <img id="imgFondo5" src="img/dotafondo.jpg">
+                                                    <div class="borde"></div>
+                                                </div>
+                                                <div class="descripcion">
+                                                        <h3>DOTA 2</h3>
+                                                        <p>
+                                                            Cuando se trata de variedad de héroes, habilidades y poderosos objetos, Dota no tiene fin. No hay dos partidas iguales. Cada héroe puede desempeñar varios roles, y hay multitud de objetos para ayudar a satisfacer las necesidades de cada partida. Dota no pone límites a tu forma de jugar, te da el poder de expresar tu propio estilo.
+                                                        </p>
+                                        
+                                                        <p>
+                                                            El equilibrio competitivo es la joya de la corona de Dota, y para garantizar que todo el mundo juegue en un campo de batalla equilibrado, el contenido principal del juego —como el vasto grupo de héroes— está disponible para todos los jugadores. Los aficionados pueden coleccionar objetos cosméticos para los héroes y divertidos complementos para el mundo en que estos habitan, pero todo lo necesario para jugar ya está ahí antes de que te unas a tu primera partida.
+                                                        </p>
+                                                        
+                                                        <p>
+                                                            Aprende los conceptos básicos jugando en modo cooperativo contra bots. Mejora tus habilidades en el modo de prueba de héroes. Adéntrate en el sistema de emparejamiento basado en el comportamiento y la habilidad que se encarga de hacer que juegues con los jugadores adecuados en cada partida.
+                                                        </p>
+                                                </div>
+                                                <div class="multimediaJuego">
+                                                    <div class="contenedorTrailers">
+                                                        <div class="trailers">
+                                                            <iframe width="530" height="300" src="https://www.youtube.com/embed/-cSFPIwMEq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                            <iframe width="530" height="300" src="https://www.youtube.com/embed/qdMTOvYBsPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <div class="contenedorImagenesJuego">
+                                                        <div id="imagenesJuegos5">
+                                                            <ul>
+                                                                <li><img src="img/dota1.jpg"></li>
+                                                                <li><img src="img/dota2 img.jpg"></li>
+                                                                <li><img src="img/dota3.jpg"></li>      
+                                                                <li><img src="img/dota4.jpg"></li>                                         
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="infoAdicional">
+                                                <h3>M&aacutes Informaci&oacuten: </h3>
+                                                <ul>
+                                                    <li>Multijugador Online</li>
+                                                    <li>Coleccionables</li>
+                                                    <li>Compras dentro de juego</li>
+                                                    <li>Digital</li>
+                                                </ul>
+                                            </div>
+                                            <div class="comprar">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <p>GRATIS</p> 
+                                                        </td>
+                                                        <td>
+                                                            <div class="botonComprar">
+                                                                <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="apex">  
+                                        <div class="contenedorCerrar">
+                                            <div class="botonCerrar">
+                                                <button class="ocultarjuego" onclick="ocultarApex();"><img id="cerrar6" src="imgEstilos/iconoX.png"></button>
+                                            </div>
+                                        </div>         
+                                        <div class="contenidoJuego">
+                                            <div class="logo">
+                                                <img id="imgLogo6" src="img/apex logo.png">
+                                            </div>
+                                            <div class="contenedorImgFondo">
+                                                <img id="imgFondo6" src="img/apexfondo.jpg">
+                                                <div class="borde"></div>
+                                            </div>
+                                            <div class="descripcion">
+                                                <div>
+                                                    <h3>Apex Legends</h3>
+                                                        <p>
+                                                            Conquista Apex Legends™, un Battle Royale gratuito* en el que leyendas con habilidades poderosas colaboran para luchar por la fama y la fortuna en los límites de la Frontera.
+                                                        </p>
+                                
+                                                        <p>
+                                                            Controla un elenco en aumento de leyendas y domina el juego táctico por escuadrones así como innovaciones atrevidas que trascienden la experiencia Battle Royale; todo dentro de un mundo duro en el que todo vale. Te damos la bienvenida a la evolución del género de disparos de héroes.
+                                                        </p>
+                                                </div>
+                                            <div class="multimediaJuego">
+                                                <div class="contenedorTrailers">
+                                                    <div class="trailers">
+                                                        <iframe width="530" height="300" src="https://www.youtube.com/embed/oQtHENM_GZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                        <iframe width="530" height="300" src="https://www.youtube.com/embed/UMJb_mkqynU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="contenedorImagenesJuego">
+                                                    <div id="imagenesJuegos6">
+                                                        <ul>
+                                                            <li><img src="img/apex 1.jpg"></li>
+                                                            <li><img src="img/apex2.jpeg"></li>
+                                                            <li><img src="img/apex3.webp"></li>      
+                                                            <li><img src="img/apex 4.jpg"></li>                                         
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <ul>
+                                
+                                            </ul>
+                                        </div>
+                                        <div class="infoAdicional">
+                                            <h3>M&aacutes Informaci&oacuten: </h3>
+                                            <ul>
+                                                <li>Multijugador Online</li>
+                                                <li>Coleccionables</li>
+                                                <li>Compras dentro de juego</li>
+                                                <li>Digital</li>
+                                            </ul>
+                                        </div>
+                                        <div class="comprar">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <p>GRATIS</p> 
+                                                    </td>
+                                                    <td>
+                                                        <div class="botonComprar">
+                                                            <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="paladins">  
+                                        <div class="contenedorCerrar">
+                                            <div class="botonCerrar">
+                                                <button class="ocultarjuego" onclick="ocultarPaladins();"><img id="cerrar7" src="imgEstilos/iconoX.png"></button>
+                                            </div>
+                                        </div>         
+                                        <div class="contenidoJuego">
+                                            <div class="logo">
+                                                <img id="imgLogo7" src="img/paladinsLogo.png">
+                                            </div>
+                                            <div class="contenedorImgFondo">
+                                                <img id="imgFondo7" src="img/paladinsfondo.jpg">
+                                                <div class="borde"></div>
+                                            </div>
+                                            <div class="descripcion">
+                                                <div>
+                                                    <h3>Paladins</h3>
+                                                        <p>
+                                                            Acompaña a más de 25 millones de jugadores en Paladins, el shooter de fantasía gratis basado en equipos. Ejerce tus armas y desata poderes mágicos como un Campeón legendario del Reino. ¡Personaliza tus habilidades para jugar exactamente como prefieras!
+                                                        </p>
+                                
+                                                        <p>
+                                                            El mundo fantástico de Paladins se basa en un universo vibrante con un reparto de Campeones variando de humanos francotiradores a duendes montando robots, elfos místicos y dragones con mochilas cohetes. Cada Campeón trae su propia combinación de habilidades al Campo de batalla. Nuevos Campeones se agregan a Paladins regularmente para mantener el gran éxito del juego.
+                                                        </p>
+                                                </div>
+                                            <div class="multimediaJuego">
+                                                <div class="contenedorTrailers">
+                                                    <div class="trailers">
+                                                        <iframe width="530" height="300" src="https://www.youtube.com/embed/g4WHiMVq1-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                        <iframe width="530" height="300" src="https://www.youtube.com/embed/fx5F1anRlJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="contenedorImagenesJuego">
+                                                    <div id="imagenesJuegos7">
+                                                        <ul>
+                                                            <li><img src="img/paladins1.jpg"></li>
+                                                            <li><img src="img/paladins2.jpg"></li>
+                                                            <li><img src="img/paladins3.jpg"></li>      
+                                                            <li><img src="img/paladins4.png"></li>                                         
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <ul>
+                                
+                                            </ul>
+                                        </div>
+                                        <div class="infoAdicional">
+                                            <h3>M&aacutes Informaci&oacuten: </h3>
+                                            <ul>
+                                                <li>Multijugador Online</li>
+                                                <li>Compatibilidad con mando</li>
+                                                <li>Compras dentro de juego</li>
+                                                <li>Digital</li>
+                                            </ul>
+                                        </div>
+                                        <div class="comprar">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <p>GRATIS</p> 
+                                                    </td>
+                                                    <td>
+                                                        <div class="botonComprar">
+                                                            <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="overwatch2">  
+                                        <div class="contenedorCerrar">
+                                            <div class="botonCerrar">
+                                                <button class="ocultarjuego" onclick="ocultarOverwatch2();"><img id="cerrar8" src="imgEstilos/iconoX.png"></button>
+                                            </div>
+                                        </div>         
+                                        <div class="contenidoJuego">
+                                            <div class="logo">
+                                                <img id="imgLogo8" src="img/overwatchlogo.png">
+                                            </div>
+                                            <div class="contenedorImgFondo">
+                                                <img id="imgFondo8" src="img/overwatchfondo.jpg">
+                                                <div class="borde"></div>
+                                            </div>
+                                            <div class="descripcion">
+                                                <div>
+                                                    <h3>Overwatch 2</h3>
+                                                        <p>
+                                                            Overwatch 2 es un juego de acción en equipo gratuito ambientado en un futuro optimista en el que todas las partidas presentan una refriega definitiva 5c5. Juega como una luchadora por la libertad que salta en el tiempo, un DJ que arrea a base de ritmos o uno de los más de 30 héroes únicos en batallas en diferentes ubicaciones de todo el mundo.
+                                                        </p>
+                                
+                                                        <p>
+                                                            A principios de 2023, experimenta el próximo capítulo de Overwatch con una serie de intensas misiones JcE que se desarrollan durante la segunda Crisis. Reúne a los agentes de Overwatch y enfrentaos a las letales tropas de Null Sector por todo el mundo.
+                                                        </p>
+                                                </div>
+                                            <div class="multimediaJuego">
+                                                <div class="contenedorTrailers">
+                                                    <div class="trailers">
+                                                        <iframe width="530" height="300" src="https://www.youtube.com/embed/PSucU14Iogw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                        <iframe width="530" height="300" src="https://www.youtube.com/embed/dZl1yGUetjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="contenedorImagenesJuego">
+                                                    <div id="imagenesJuegos8">
+                                                        <ul>
+                                                            <li><img src="img/overwatch1.jpg"></li>
+                                                            <li><img src="img/overwatch2.jpg"></li>
+                                                            <li><img src="img/overwatch3.png"></li>      
+                                                            <li><img src="img/overwatch4.jpg"></li>                                         
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <ul>
+                                
+                                            </ul>
+                                        </div>
+                                        <div class="infoAdicional">
+                                            <h3>M&aacutes Informaci&oacuten: </h3>
+                                            <ul>
+                                                <li>Multijugador Online</li>
+                                                <li>Compatibilidad con mando</li>
+                                                <li>Compras dentro de juego</li>
+                                                <li>Digital</li>
+                                            </ul>
+                                        </div>
+                                        <div class="comprar">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <p>GRATIS</p> 
+                                                    </td>
+                                                    <td>
+                                                        <div class="botonComprar">
+                                                            <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="juegos">
+                    <div class="juegosT">
+                        <a name="anclaAventura"><h2>Aventura</h2></a>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="tablaJuegos">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <h3>Hogwarts Legacy</h3>
+                                                    <img src="img/hogwarts portada.jpg">
+                                                    <div class="botonAbrir">
+                                                        <input type="button"  onclick="mostrarHogwarts();" value="Ver Juego">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h3>Ori</h3>
+                                                    <img src="img/oriportada.jpg">
+                                                    <div class="botonAbrir">
+                                                        <input type="button" onclick="mostrarOri();" value="Ver Juego"> 
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h3>Genshin Impact</h3>
+                                                    <img src="img/genshinportada.jpg">
+                                                    <div class="botonAbrir">
+                                                        <input type="button" onclick="mostrarGenshin();" value="Ver Juego">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h3>Hollow Knight</h3>
+                                                    <img src="img/hollowportada.jpg">
+                                                    <div class="botonAbrir">
+                                                        <input type="button" onclick="mostrarHollow();" value="Ver Juego">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                        <div id="hogwarts">  
+                                        <div class="contenedorCerrar">
+                                            <div class="botonCerrar">
+                                                <button class="ocultarjuego" onclick="ocultarHogwarts();"><img id="cerrar9" src="imgEstilos/iconoX.png"></button>
+                                            </div>
+                                        </div>         
+                                        <div class="contenidoJuego">
+                                            <div class="logo">
+                                                <img id="imgLogo9" src="img/hogwartslogo.webp">
+                                            </div>
+                                            <div class="contenedorImgFondo">
+                                                <img id="imgFondo9" src="img/hogwartsfondo.png">
+                                            <div class="borde"></div>
+                                        </div>
+                                        <div class="descripcion">
+                                                <h3>Hogwarts Legacy</h3>
+                                                <p>
+                                                    Hogwarts Legacy es un RPG de acción en un mundo abierto ambientado en el universo de los libros de Harry Potter. Embárcate en una aventura que te llevará por lugares nuevos y conocidos, mientras descubres animales mágicos, personalizas tu personaje, elaboras pociones, dominas hechizos, mejoras tus talentos y te conviertes en el mago que siempre has querido ser.
+                                                </p>
+                                
+                                                <p>
+                                                    Disfruta de Hogwarts en el siglo XIX. Tu personaje es un estudiante que tiene la clave de un antiguo secreto que amenaza con destruir el mundo mágico. Haz aliados, lucha contra magos tenebrosos y decide el destino del mundo mágico. Crea tu propio legado. Escribe tu propia historia.
+                                                </p>
+                                        </div>
+                                        <div class="multimediaJuego">
+                                            <div class="contenedorTrailers">
+                                                <div class="trailers">
+                                                    <iframe width="530" height="300" src="https://www.youtube.com/embed/S6GTl_vPRvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    <iframe width="530" height="300" src="https://www.youtube.com/embed/2AZmuZNu5LA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="contenedorImagenesJuego">
+                                                <div id="imagenesJuegos9">
+                                                    <ul>
+                                                        <li><img src="img/hogwarts 1.jpg"></li>
+                                                        <li><img src="img/hogwarts 2.jpg"></li>
+                                                        <li><img src="img/hogwarts 3.jpg"></li>      
+                                                        <li><img src="img/hogwarts4.jpg"></li>                                         
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="infoAdicional">
+                                        <h3>M&aacutes Informaci&oacuten: </h3>
+                                        <ul>
+                                            <li>Un jugador</li>
+                                            <li>Compatibilidad con Mando</li>
+                                            <li>Compras dentro de juego</li>
+                                            <li>F&iacutesico y digital</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comprar">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>$8.999ARS</p> 
+                                                </td>
+                                                <td>
+                                                    <div class="botonComprar">
+                                                        <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                        </div>
+                            </td>
+                            <td>
+                                <div id="ori">  
+                                    <div class="contenedorCerrar">
+                                        <div class="botonCerrar">
+                                            <button class="ocultarjuego" onclick="ocultarOri();"><img id="cerrar10" src="imgEstilos/iconoX.png"></button>
+                                        </div>
+                                    </div>         
+                                    <div class="contenidoJuego">
+                                        <div class="logo">
+                                            <img id="imgLogo10" src="img/orilogo.png">
+                                        </div>
+                                        <div class="contenedorImgFondo">
+                                            <img id="imgFondo10" src="img/orifondo.webp">
+                                            <div class="borde"></div>
+                                        </div>
+                                        <div class="descripcion">
+                                                <h3>Ori</h3>
+                                                <p>
+                                                    Ori, el pequeño espíritu, no es ajeno al peligro, pero cuando un vuelo fatídico pone en riesgo el camino del Ku la lechuza, se requerirá mucho más que solo valentía para reunir nuevamente a su familia, restaurar una tierra destruida, y descubrir el verdadero destino de Ori. De los creadores del aclamado juego de acción de plataformas Ori and the Blind Forest, llega la esperada secuela. Comienza una aventura completamente nueva en un amplio mundo repleto de nuevos amigos y enemigos que cobran vida en ilustraciones impresionantes creadas a mano.
+                                                </p>
+                                
+                                                <p>
+                                                    Sumérgete en una banda sonora original completamente orquestada, Ori and the Will of the Wisps continúa con el legado de Moon Studios de acción de plataformas rigurosamente diseñada además de una narrativa profundamente emotiva.
+                                                </p>
+                                        </div>
+                                        <div class="multimediaJuego">
+                                            <div class="contenedorTrailers">
+                                                <div class="trailers">
+                                                    <iframe width="530" height="300" src="https://www.youtube.com/embed/cklw-Yu3moE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    <iframe width="530" height="300" src="https://www.youtube.com/embed/S5teihdBnfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="contenedorImagenesJuego">
+                                                <div id="imagenesJuegos10">
+                                                    <ul>
+                                                        <li><img src="img/ori1.webp"></li>
+                                                        <li><img src="img/ori2.jpg"></li>
+                                                        <li><img src="img/ori3.jpg"></li>      
+                                                        <li><img src="img/ori4.jpg"></li>                                         
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="infoAdicional">
+                                        <h3>M&aacutes Informaci&oacuten: </h3>
+                                        <ul>
+                                            <li>Un jugador</li>
+                                            <li>Compatibilidad con Mando</li>
+                                            <li>Remote play para tablet</li>
+                                            <li>F&iacutesico y digital</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comprar">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>$2.999ARS</p> 
+                                                </td>
+                                                <td>
+                                                    <div class="botonComprar">
+                                                        <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div id="genshin">  
+                                    <div class="contenedorCerrar">
+                                        <div class="botonCerrar">
+                                            <button class="ocultarjuego" onclick="ocultarGenshin();"><img id="cerrar11" src="imgEstilos/iconoX.png"></button>
+                                        </div>
+                                    </div>         
+                                    <div class="contenidoJuego">
+                                        <div class="logo">
+                                            <img id="imgLogo11" src="img/genshinlogo.png">
+                                        </div>
+                                        <div class="contenedorImgFondo">
+                                            <img id="imgFondo11" src="img/genshinfondo.webp">
+                                            <div class="borde"></div>
+                                        </div>
+                                        <div class="descripcion">
+                                                <h3>Genshin Impact</h3>
+                                                <p>
+                                                    Genshin Impact es un JRPG de mundo abierto en el que podremos explorar un mundo vasto lleno de mazmorras, secretos y aventuras que vivir.
+                                                </p>
+                                
+                                                <p>
+                                                    La principal característica de Genshin Impact es su sistema de elementos, y en Teyvat existen siete: anemo (viento), pyro (fuego), electro (trueno), hydro (agua), cryo (hielo), dendro (planta) y geo (roca).2​ Los jugadores pueden aprovechar este sistema y usar combinaciones3​4​ para causar daños mayores a los enemigos y así completar las misiones. No obstante, el uso de elementos presenta más características: Por ejemplo, la habilidad de pyro puede destruir el escudo de madera de un enemigo haciéndolo arder o la habilidad de cryo puede congelar el agua para poder caminar encima.
+                                                </p>
+                                        </div>
+                                        <div class="multimediaJuego">
+                                            <div class="contenedorTrailers">
+                                                <div class="trailers">
+                                                    <iframe width="530" height="300" src="https://www.youtube.com/embed/BOglS2_TbTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    <iframe width="530" height="300" src="https://www.youtube.com/embed/SY3XGzDousM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="contenedorImagenesJuego">
+                                                <div id="imagenesJuegos11">
+                                                    <ul>
+                                                        <li><img src="img/genshin1.jpg"></li>
+                                                        <li><img src="img/genshin2.jpg"></li>
+                                                        <li><img src="img/genshin3.webp"></li>      
+                                                        <li><img src="img/genshin4.webp"></li>                                         
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="infoAdicional">
+                                        <h3>M&aacutes Informaci&oacuten: </h3>
+                                        <ul>
+                                            <li>Un jugador/multijugador</li>
+                                            <li>Compatibilidad con Mando</li>
+                                            <li>Compras dentro del juego</li>
+                                            <li>F&iacutesico y digital</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comprar">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>$700ARS</p> 
+                                                </td>
+                                                <td>
+                                                    <div class="botonComprar">
+                                                        <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="hollow">  
+                                    <div class="contenedorCerrar">
+                                        <div class="botonCerrar">
+                                            <button class="ocultarjuego" onclick="ocultarHollow();"><img id="cerrar12" src="imgEstilos/iconoX.png"></button>
+                                        </div>
+                                    </div>         
+                                    <div class="contenidoJuego">
+                                        <div class="logo">
+                                            <img id="imgLogo12" src="img/hollowlogo.webp">
+                                        </div>
+                                        <div class="contenedorImgFondo">
+                                            <img id="imgFondo12" src="img/hollowportada.jpg">
+                                            <div class="borde"></div>
+                                        </div>
+                                        <div class="descripcion">
+                                                <h3>Hollow Knight</h3>
+                                                <p>
+                                                    Debajo de la desvanecida ciudad de Dirtmouth duerme un antiguo reino en ruinas. Muchos son atraídos bajo la superficie, en busca de riquezas, gloria o respuestas a viejos secretos.
+                                                </p>
+                                
+                                                <p>
+                                                    Hollow Knight es una aventura de acción en 2D de estilo clásico en un vasto mundo interconectado. Explora cavernas retorcidas, ciudades antiguas y páramos mortales; lucha contra criaturas contaminadas y hazte amigo de bichos extraños; y resuelve misterios antiguos en el corazón del reino.
+                                                </p>
+                                        </div>
+                                        <div class="multimediaJuego">
+                                            <div class="contenedorTrailers">
+                                                <div class="trailers">
+                                                    <iframe width="530" height="300" src="https://www.youtube.com/embed/UAO2urG23S4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    <iframe width="530" height="300" src="https://www.youtube.com/embed/U8Wz-VwX5dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="contenedorImagenesJuego">
+                                                <div id="imagenesJuegos12">
+                                                    <ul>
+                                                        <li><img src="img/hollow1.jpg"></li>
+                                                        <li><img src="img/hollow2.jpg"></li>
+                                                        <li><img src="img/hollow3.jpg"></li>      
+                                                        <li><img src="img/hollow4.jpg"></li>                                         
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="infoAdicional">
+                                        <h3>M&aacutes Informaci&oacuten: </h3>
+                                        <ul>
+                                            <li>Un jugador</li>
+                                            <li>Compatibilidad con Mando</li>
+                                            <li>Remote play para Tablets</li>
+                                            <li>Digital</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comprar">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>$1.050ARS</p> 
+                                                </td>
+                                                <td>
+                                                    <div class="botonComprar">
+                                                        <a href="compra.html"><input type="button" value="Comprar"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        <script>
+            function mostrarSekiro(){
+                document.getElementById('sekiro').style.display = 'block';
+
+            }
+
+            function ocultarSekiro(){
+                document.getElementById('sekiro').style.display = 'none';
+            }
+
+            function mostrarDota() {
+                document.getElementById('dota').style.display = 'block';
+            }
+
+            function ocultarDota(){
+                document.getElementById('dota').style.display = "none";
+            }
+
+            function mostrarHogwarts(){
+                document.getElementById('hogwarts').style.display = 'block';
+            }
+
+            function ocultarHogwarts(){
+                document.getElementById('hogwarts').style.display = "none";
+            }
+
+            function mostrarCod(){
+                document.getElementById('cod').style.display = 'block';
+            }
+
+            function ocultarCod(){
+                document.getElementById('cod').style.display = "none";
+            }
+            
+            function mostrarSpiderman(){
+                document.getElementById('spiderman').style.display = "block";
+            }
+
+            function ocultarSpiderman(){
+                document.getElementById('spiderman').style.display = "none";
+            }
+
+            function mostrarMilesmorales(){
+                document.getElementById('milesmorales').style.display = "block";
+            }
+
+            function ocultarMilesmorales(){
+                document.getElementById('milesmorales').style.display = "none";
+            }
+
+            function mostrarApex(){
+                document.getElementById('apex').style.display = "block";
+            }
+
+            function ocultarApex(){
+                document.getElementById('apex').style.display = "none";
+            }
+            
+            function mostrarPaladins(){
+                document.getElementById('paladins').style.display = "block";
+            }
+
+            function ocultarPaladins(){
+                document.getElementById('paladins').style.display = "none";
+            }
+
+            function mostrarOverwatch2(){
+                document.getElementById('overwatch2').style.display = "block";
+            }
+
+            function ocultarOverwatch2(){
+                document.getElementById('overwatch2').style.display = "none";
+            }
+
+            function mostrarOri(){
+                document.getElementById('ori').style.display = "block";
+            }
+
+            function ocultarOri(){
+                document.getElementById('ori').style.display = "none";
+            }
+
+            function mostrarGenshin(){
+                document.getElementById('genshin').style.display = "block";
+            }
+
+            function ocultarGenshin(){
+                document.getElementById('genshin').style.display = "none";
+            }
+
+            function mostrarHollow(){
+                document.getElementById('hollow').style.display = "block";
+            }
+
+            function ocultarHollow(){
+                document.getElementById('hollow').style.display = "none";
+            }
+        </script>
+        <script src="cartel.js"></script>
+    </body>
+
+</html>

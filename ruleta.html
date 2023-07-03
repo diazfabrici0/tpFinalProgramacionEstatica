@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            RULETA DE CUPONES
+        </title>
+        <link rel="stylesheet" href="estilos.css">
+        <video src="imgEstilos/fondo.mp4" autoplay loop></video>
+    </head>
+    <body>
+        <div>
+            <header class="upperbar">
+                <h1>Neon Store</h1>
+                <nav>
+                  <ul>
+                    <li><a href="paginaPrincipal.html">Inicio</a></li>
+                    <li><a href="aboutus.html">Acerca de</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                  </ul>
+                </nav>
+              </header>
+        </div>
+        
+        <div id="cupon">
+
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td>
+                        <p class="suCupon">Tu descuento: </p>
+                    </td>
+                    <td>
+                        <img id="imagenCupon" src="imgEstilos/cuponImagen.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="turnos">TIROS: 1</p>
+                    </td>
+                </tr>
+ 
+            </table>
+
+        </div>
+        <div>
+            <div id="cuerpoRuleta">
+
+                <div class="flechaimg">
+                    <img id="flecha"src="imgEstilos/Diseño sin título.png">
+                </div>
+
+                <div>
+                    <img class="img-fluid" id="ruleta" src="imgEstilos/miruleta.png">
+                </div> 
+            </div>    
+            <div id="sonido" style="display:none">
+                <iframe src="sonido/Case Opening Sound Effect _ CSGO (320 kbps).mp3" id="audio"></iframe>
+            </div>
+                 
+        </div>
+        <script src="jquery.min.js"></script>
+        <script src="funciones.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>

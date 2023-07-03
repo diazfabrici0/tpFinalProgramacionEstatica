@@ -1,0 +1,1453 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'fuente', sans-serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+video{
+    position: fixed;
+    top: 0;
+    left:-5px;
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@font-face {
+    font-family: 'fuente';
+    src: url(fuentes/Prototype.ttf) format(truetype);
+}
+
+#textoDescuento{
+    font-size: 17px;
+}
+
+.comprando h1{
+    color: #fff;
+    font-weight: 15;
+    position: relative;
+    margin-top: 40px;
+}
+
+.comprando {
+    border-radius: 10px;
+    border: 2px solid #BC12FF;
+    margin-top: 50px;
+    position: relative;
+    right: -500px;
+    color: #fff;
+    background-color: #4c19689f;
+    max-width: 600px;
+    height: 400px;
+}
+
+#botonComprando {
+    background: none;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0px 0px 6px 2px;
+    bottom: 20px;
+    margin-bottom: 30px;
+    left: 220px;
+}
+
+#cuponEntrada{
+    position: absolute;
+    left: 150px;
+    bottom: 150px;
+    margin-left: 35px;
+    height: 25px;
+    width: 215px;
+    border: 2px solid #BC12FF;
+    border-radius: 5px;
+    background: none;
+    background-color: #bc12ff94;
+    box-shadow: 0px 0px 3px 1px;
+}
+
+#metodoPago{
+    background: none;
+    color: #fff;
+    border: 2px solid #c7c7c7;
+    border-radius: 5px;
+    font-size: larger;
+    margin-left: -3px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#botonLupa{
+    background: none;
+    border: none;
+}
+
+.opcionCompra  {
+    background: none;
+    background-color: #4C1968;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.labelsCompra {
+    margin-top: 20px;
+    margin-left: 30px;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    left: 0;
+}
+
+.botonaCategorias{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%px;
+    height: 50px;
+    position: relative;
+}
+
+.botonaCategorias input{
+    width: 250px;
+    height: 50px;
+    background: none;
+    background-color: #5d0381;
+    border-radius: 10px;
+    border: 2px solid #9d05da;
+    box-shadow: 0px 0px 6px 2px #fff;
+    color: #ffffffec;
+    font-size: 20px;
+}
+
+.imagenes img {
+    position: relative;
+    height: 300px;
+    width: auto;
+    margin: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 3px;
+}
+
+#imgInicio9{
+    height: 300px;
+    width: 535px;
+    left: -5px;
+}
+
+#imgInicio10{
+    height: 300px;
+    width: 530px;
+    left: 5px;
+}
+
+.tablaJuegos{
+    margin-left: 65px;
+}
+
+.juegosT{
+    position: relative;
+    top: 0;
+    left: -110px;
+    width: 1380px;
+    height: 270px;
+    background-color: #4c196898;
+    border-radius: 15px;
+}
+
+.juegosT h3 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 15;
+}
+
+.juegosAccion{
+    position: relative;
+    top: 0;
+    left: -10px;
+    width: 1380px;
+    height: 270px;
+    background-color: #4c196898;
+    border-radius: 15px;
+}
+
+.juegosAccion h3 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 15;
+}
+
+
+
+.botonAbrir input {
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 150px;
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+.botonComprar input{
+    height: 30px;
+    width: 60px;
+    background: none;
+    background-color: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+
+.comprar{
+    width: 252px;
+    height: 34px;
+    position: absolute;
+    bottom: -15px;
+    right: 25px;
+    background-color: #00000086;
+    border-radius: 5px;
+}
+
+.comprar input {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+}
+
+.comprar p {
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+.infoAdicional h3 {
+    color: #fff;
+    font-weight: 13;
+    top: 80px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.infoAdicional li {
+    list-style:inside;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.infoAdicional {
+    position: absolute;
+    top:312px;
+    right: 25px;
+    background-color: #140f1688;
+    border-radius: 10px;
+    width: 235px;
+    height: 200px;
+    
+}
+
+.contenedorCerrar{
+    width: 1380px;
+    height: 60px;
+    background: none;
+    background-color: #fff;
+    position: relative;
+    margin-top: 8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#cerrar{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#cerrar2{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#cerrar3{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#cerrar4{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#cerrar5{
+    top: 20px;
+    right: -5px;
+    position: absolute;
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#cerrar6{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#cerrar7{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#cerrar8{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#cerrar9{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+#cerrar10{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+#cerrar11{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+#cerrar12{
+    height: 20px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+.ocultarjuego{
+    width: 50px;
+    height: 50px;
+    background: none;
+    background-color: #4C1968;
+    border-radius: 60px;
+    border: 3px solid #fff;
+    top: 0;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.contenidoJuego{
+    width: 95%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.logo {
+    float: left;
+    width: 300px;
+    position: relative;
+    margin-top: -30px;
+
+}
+
+#imgLogo{
+    height: 100px;
+    width: 310px;
+    margin-left: -20px;
+}
+
+#imgLogo2{
+    height: 140px;
+    width: 310px;
+    margin-left: -20px;
+}
+
+#imgLogo3{
+    height: 140px;
+    width: 310px;
+    margin-left: -20px;
+}
+
+#imgLogo4{
+    height: 140px;
+    width: 310px;
+    margin-left: -20px;
+}
+
+#imgLogo5{
+    height: 140px;
+    width: 310px;
+    margin-left: -20px;
+}
+
+#imgLogo6{
+    height: 140px;
+    width: 240px;
+    margin-left: -20px;
+}
+
+#imgLogo7{
+    height: 140px;
+    width: 240px;
+    margin-left: -20px;
+}
+
+#imgLogo8{
+    height: 140px;
+    width: 210px;
+    margin-left: -20px;
+}
+
+#imgLogo9{
+    height: 107px;
+    width: 295px;
+    margin-left: -20px;
+}
+
+#imgLogo10{
+    height: 155px;
+    width: 240px;
+    margin-left: -20px;
+}
+
+#imgLogo11{
+    height: 120px;
+    width: 260px;
+    margin-left: -20px;
+}
+
+#imgLogo12{
+    height: 100px;
+    width: 280px;
+    margin-left: -20px;
+}
+
+.borde{
+    top: 5px;
+    left: -3px;
+    height: 914px;
+    width: 1380px;
+    position: absolute;
+    border: 3px solid  #9d05da;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+#imgFondo{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo2{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo3{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo4{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo5{
+    height: 901px;
+    width: 1380px;
+    left: -30px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo6{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo7{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo8{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo9{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo10{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo11{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#imgFondo12{
+    height: 901px;
+    width: 1380px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+    background-size: cover;
+}
+
+#sekiro{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: 0px;
+    top: -120px;
+    z-index:12;
+    display: none;
+}
+
+#cod{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: 0px;
+    top: -120px;
+    z-index:11;
+    display: none;
+}
+
+#spiderman{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: 0px;
+    top: -120px;
+    z-index:10;
+    display: none;
+}
+
+#milesmorales{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: 0px;
+    top: -120px;
+    z-index:9;
+    display: none;
+}
+
+#dota{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: 0px;
+    top: -120px;
+    z-index:8;
+    display: none;
+}
+
+#apex{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: 0px;
+    top: -120px;
+    z-index:7;
+    display: none;
+}
+
+#paladins{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: 0px;
+    top: -120px;
+    z-index:6;
+    display: none;
+}
+
+#overwatch2{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: 0px;
+    top: -120px;
+    z-index:5;
+    display: none;
+}
+
+#hogwarts{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: -110px;
+    top: -120px;
+    z-index:4;
+    display: none;
+}
+
+#ori{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: -110px;
+    top: -120px;
+    z-index:3;
+    display: none;
+}
+
+#genshin{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: -110px;
+    top: -120px;
+    z-index:2;
+    display: none;
+}
+
+#hollow{
+    position: absolute;
+    width: 1380px;
+    height: auto;
+    left: -110px;
+    top: -120px;
+    z-index:1;
+    display: none;
+}
+
+.descripcion h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    margin-top: -20px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    display: block;
+    font-weight: 15;
+    font-size: 30px;
+}
+
+.descripcion p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    color: #fff;
+    position: relative;
+    text-align: left;
+}
+
+#sekiro li {
+    color: #fff;
+}
+
+#cod li {
+    color: #fff;
+}
+
+#spiderman li {
+    color: #fff;
+}
+
+#milesmorales li {
+    color: #fff;
+}
+
+#dota li {
+    color: #fff;
+}
+
+#apex li {
+    color: #fff;
+}
+
+#paladins li {
+    color: #fff;
+}
+
+#overwatch2 li {
+    color: #fff;
+}
+
+#hogwarts li {
+    color: #fff;
+}
+
+#ori li {
+    color: #fff;
+}
+
+#genshin li {
+    color: #fff;
+}
+
+#hollow li {
+    color: #fff;
+}
+
+.multimediaJuego {
+    float: left;
+	width: 1080px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.contenedorTrailers{
+    width: 1380px;
+}
+
+.trailers{
+    margin-left: -300px;
+    margin-bottom: -20px;
+}
+
+.trailers iframe{
+    border-radius: 20px;
+}
+
+.multimediaJuego ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 16s infinite alternate ease-in-out;
+}
+
+.multimediaJuego li {
+	width: 100%;
+	list-style: none;
+}
+
+.contenedorImagenesJuegos{
+    height: 100%;
+    width: 100%;
+}
+
+#imagenesJuegos img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos2 img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos3 img { 
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos4 img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos5 img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos6 img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos7 img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos8 img { 
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos9 img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos10 img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#imagenesJuegos11 img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px; 
+}
+
+#imagenesJuegos12 img {
+    height: 270px;
+    width: auto;
+    border-radius: 15px; 
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.juegos h2 {
+    color: #fff;
+    font-weight: 15;
+}
+
+.juegos img {
+    height: 150px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.tablaJuegos img {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.juegos{
+    width: 1280px;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+
+
+.categorias{
+    background-color: #4c1968d0;
+    margin-top: 20px;
+    height: 50px;
+    width: 1150px;
+    margin-left: 200px;
+    border-radius: 50px;
+
+}
+
+.categorias li {
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.categorias ul {
+    display: flex;
+    margin-left: 39%;
+}
+
+.categorias a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.presentacion input{
+    margin-left: 30px;
+    background: none;
+    width:200px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #9d05da;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #c7c7c793;
+}
+
+.presentacion{
+    margin-top: 150px;
+}
+
+.presentacion h2{
+    color: #fff;
+    font-weight: 15;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.presentacionImagenes img {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+
+#imgP1{
+    top: 120px;
+    left: 30px;
+    height: 120px;
+    opacity: 0.3;
+}
+
+
+#imgP2{
+    top: 170px;
+    right: 80px;
+    opacity: 0.3;
+}
+
+#imgP3{
+    top: 320px;
+    left: 170px;
+    height: 90px;
+    width: auto;
+}
+
+#imgP4{
+    top: 80px;
+    height: 90px;
+    width: auto;
+}
+
+#imgP5{
+    right: 440px;
+    bottom: 120px;
+    height: 120px;
+    width: 230px;
+    opacity: 0.3;
+}
+
+#imgP6{
+    right: 50px;
+    bottom: 290px;
+    height: 120px;
+    width: auto;
+}
+
+#imgP7{
+    left: 200px;
+    height: 110px;
+    bottom: 80px;
+    opacity: 0.3;
+}
+
+
+
+.presentacion p {
+    color: #fff;
+    font-weight: 1;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.mapa {
+    position: absolute;
+    width: 300px; /* Ancho deseado para el mapa */
+    height: 300px; /* Altura deseada para el mapa */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    overflow: hidden; /* Oculta cualquier contenido que exceda el área circular */
+    left: 690px;
+    bottom:30px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.bottomBar{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #bc12ff70;
+    color: #fff;
+    height: 20px;
+}
+
+.bottomBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.bottomBar ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bottomBar li {
+    font-weight: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formCaja{
+    width: 95%;
+    height: 100px;
+    max-width: 400px;
+    position: relative;
+    left: 628px;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.formCaja span{
+    display: block;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px
+}
+
+.formCaja input{
+    background: none;
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #9d05da;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #c7c7c793;
+}
+
+.formCaja textarea{
+    text-align: left;
+    background: none;
+    background-color: #bc12ff70;
+    border-radius: 5px;
+    border: 2px solid #BC12FF;
+    color: #fff;
+    padding-top: 10px;
+    outline: 0px;
+    height: 100px;
+    width: 100%;
+}
+
+.formSup{
+    width: 100%;
+    height: 100px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    left: 40%;
+}
+
+.subtitles h2 {
+    text-align: center;
+    position: relative;
+    margin-left: 50px;
+    font-weight: 15;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.formSup{
+    margin-top: 10px;
+}
+
+.formSup input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 35px;
+    border: none;
+    outline: 0px;
+    font-size: 18px;
+} 
+
+.formSup .miEmail{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.formSup .miEmail::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #BC12FF;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.spanEmail{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-size: 20px;
+}
+
+.formSup input:focus + .miEmail .spanEmail, .formSup input:valid + .miEmail .spanEmail
+{
+    transform: translateY(-150%);
+    font-size: 15px;
+    color:#BC12FF;
+}
+
+.formSup input:focus + .miEmail:after, .formSup input:valid + .miEmail::after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .formSup{
+        width: 85%;
+    }
+}
+
+.divConsulta h2 {
+    text-align: center;
+    position: relative;
+    margin-left: 10px;
+    font-weight: 15;
+    color: #fff;
+}
+
+.liSup ul{
+    position:relative;
+    top: 19px;
+    width:100%;
+    margin-top: 0px;
+}
+
+.navSup{
+    background-color:  #7300a84d;
+}
+
+#carritoImg{
+    position: absolute;
+    height: 67px;
+    width: auto;
+    right: 70px;
+}
+
+#ruletaLogo{
+    position: absolute;
+    height: 65px;
+    right: 10px
+}
+
+.upperbarPrin h1{
+    text-align: left;
+    position: absolute;
+    margin-left: 10px;
+    font-weight: 15;
+}
+
+.buscar{
+	position: absolute;
+	left: 71%;
+	top: 10px;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+}
+#inputPrin{
+	outline: none;
+	box-sizing: border-box;
+	height: 60px;
+	width: 0px;
+	padding: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid #4C1968;
+	transition: all .7s ease;
+}
+
+::placeholder{
+    color: grey;
+}
+
+.btn{
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	background: #4C1968;
+	line-height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+
+}
+
+.btn i {
+    font-size: 25px;
+    color: white;
+    line-height: 60px;
+    transition: all .7s ease;
+}
+
+.buscar:hover #inputPrin{
+    width: 250px;
+
+}
+
+.buscar:hover i {
+    transform: rotate(-360deg);
+}
+
+.btn:hover{
+    background: #4C1968;
+}
+
+#lupa{
+    height: 20px;
+    width: auto;
+}
+
+.upperbarPrin ul  {
+    position:relative;
+    top: 19px;
+    width:100%;
+    left: -300px;
+    margin-top: 0px;
+    
+}
+
+.upperbarPrin {
+    background-color: #7300a863;
+    color: #fff;
+    width: 100%;
+    height: 56px;
+    padding-bottom: 5px;
+    font-size: x-large;
+    position: relative;
+    text-align: left;
+}
+  
+.upperbarPrin  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.upperbarPrin  nav ul li {
+    display:inline-block;
+    margin-right: 10px;
+}
+  
+.upperbarPrin nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.upperbar h1 {
+    text-align: left;
+    position: absolute;
+    margin-left: 10px;
+    font-weight: 15;
+}
+
+.upperbar ul{
+    top: 19px;
+    left: 300px;
+    margin-top: 0px;
+    margin-left: 200px;
+}
+.upperbar {
+    background-color: #7300a863;
+    color: #fff;
+    width: 100%;
+    height: 55px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: x-large;
+    position: relative;
+}
+
+.upperbar h1{
+    text-align: left;
+    position: absolute;
+    margin-left: 10px;
+}
+  
+.upperbar  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+  
+.upperbar  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    
+}
+  
+.upperbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+#cupon{
+    color: aliceblue;
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    padding: 20px;
+    margin-right: 75%;
+    font-weight: 100;
+}
+
+#imagenCupon{
+    position: relative;
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+#flecha{
+    height: 230px;
+    width: 290px;   
+    position: fixed;
+    left: 619px;
+    top: 40px;
+    z-index: 1000;
+}
+
+#ruleta{
+    position: fixed;
+    top: 170px;
+    right: 535px;
+    z-index: 100;
+    transition: all 7s;
+}

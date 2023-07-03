@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compra de producto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <video src="imgEstilos/fondo.mp4" autoplay loop></video>
+</head>
+<body>
+    <div>
+        <header class="upperbar">
+            <h1>Neon Store</h1>
+            <nav id="nav">
+              <ul>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="aboutus.html">Acerca de</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+              </ul>
+            </nav>
+          </header>
+    </div>
+    <div class="comprando">
+        <h1>Compra de producto</h1>
+    
+        <form id="formularioCompra">
+            <label class="labelsCompra" for="metodoPago">Método de pago:</label>
+            <select id="metodoPago" name="metodoPago">
+                <option class="opcionCompra" value="tarjeta">Tarjeta de crédito</option>
+                <option class="opcionCompra" value="paypal">PayPal</option>
+                <option class="opcionCompra" value="transferencia">Transferencia bancaria</option>
+            </select>
+            
+            <br>
+            
+            <label id="textoDescuento" class="labelsCompra" for="cuponEntrada">Cupón de descuento:</label>
+            <input type="text" id="cuponEntrada" name="cuponEntrada">
+            
+            <br>
+            
+            <input id="botonComprando" type="button" value="Comprar" onclick="realizarCompra()">
+        </form>
+    </div>
+    <script>
+        function realizarCompra() {
+            // Obtener los valores seleccionados
+            var metodoPago = document.getElementById('metodoPago').value;
+            var cupon = document.getElementById('cuponEntrada').value;
+            
+            // Realizar acciones adicionales según los valores seleccionados
+            console.log('Método de pago seleccionado:', metodoPago);
+            console.log('Cupón ingresado:', cupon);
+            
+            // Aquí puedes agregar tu lógica para procesar la compra y mostrar un mensaje de éxito
+            // Por ejemplo, puedes utilizar la función "mostrarMensajeCompraExitosa()" que definimos anteriormente
+            
+            // Mostrar el mensaje de compra exitosa usando una librería de notificaciones como "SweetAlert"
+            Swal.fire({
+                icon: 'success',
+                title: '¡Compra realizada con éxito!',
+                confirmButtonColor: '#8A2DED',
+                confirmButtonText: 'Aceptar'
+            });
+        }
+    </script>
+    
+    <!-- Incluye aquí los enlaces a las librerías necesarias, como SweetAlert y jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="ruta/a/jquery.min.js"></script>
+</body>
+</html>
