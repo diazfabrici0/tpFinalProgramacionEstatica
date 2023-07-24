@@ -25,7 +25,7 @@
             <h2>¿En que podemos ayudarte?</h2>
         </div>
         <form class="formSup">
-            <input type="email" required>
+            <input type="email" id="correo" required>
             <label class="miEmail" for="email">
                 <span class="spanEmail"> Email: </span>
             </label>
@@ -35,8 +35,8 @@
             <label for="consultasCaja">
                 <span class="spanTextarea">Dejanos tu consulta: </span>
             </label>
-            <textarea class="consultasCaja"></textarea> 
-            <input type="submit" value="Enviar">
+            <textarea class="consultasCaja" id="comentarios"></textarea> 
+            <input type="button" onclick="validar()" value="Enviar">
         </form>
         <div class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.61077228359306!2d-46.63743586699144!3d-23.540688710581854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5959cd94c4ed%3A0xafcfec6e7618fe6d!2sNeon%20Store%20Games%20Informatica!5e0!3m2!1ses!2sar!4v1687372540015!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
@@ -49,5 +49,23 @@
                 <li>C&oacute;digo Postal: r576</li>
             </ul>
         </footer>
+        <script>
+            const expresiones = {
+                correoU: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+            }
+
+            function validar(){
+
+                var correo = document.getElementById('correo').value;
+
+                if(!expresiones.correoU.test(correo)){
+                    alert('Ingrese un email valido');
+                }else{
+                    document.getElementById('correo').value = "";
+                    document.getElementById('comentarios').value = "";
+                    alert('Su consulta se envio con exito!');
+                }
+            }
+        </script>
     </body>
 </html>
